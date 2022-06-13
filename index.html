@@ -1,85 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="icon" href="imgens/icono.ico">
-        <title>Cresp@rte</title>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
+         <link rel="icon" href="imgens/icono.ico">
+         <title>Cresp@rte</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body id="body">
-    <div id="grilla">
-        <header class="header">            
-        <div>          
-            <Nav class="nav"> 
-                <a href="index.html"><img src="imgens/logo.png"></a>                 
-                <ul class="animate__animated animate__backInDown">
-                    <li><a href="musica.html">Música</a></li>
-                    <li><a href="arteplastico.html">Arte Plastico</a></li>
-                    <li><a href="nav/eventos.html"> Sociales </a>
-                        <ul class="ul2">
-                             <li> <a href="nav/eventos.html" > Eventos</a></li>
-                             <li> <a href="nav/artistas.html" > Artistas</a></li>
-                             <li> <a href="nav/contacto.html" >Contacto</a></li>
+         <div class="banner">          
+            <a href="index.html"><img src="imgens/logo.png" class="article animate__animated animate__backInDown"></a>
+            <a class="banner__flecha" href="#flecha"><i class="fa-solid fa-angles-down"></i></a>           
+         </div>     
+        <header class="header" id="flecha">           
+            <nav class="navbar navbar-expand-lg header__nav">
+                <div class="container-fluid">
+                         <a class="navbar-brand" href="index.html"><img src="imgens/logo.png" alt="Logo Cresp@rte"></a>
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                         <span class="navbar-toggler-icon"></span>
+                         </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav animate__animated animate__fadeInLeft">
+                            <li class="nav-item">
+                                 <a class="nav-link" href="musica.html">Música</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="arteplastico.html">Arte Plastico</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="nav/eventos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sociales</a>
+                                <ul class="dropdown-menu animate__animated animate__fadeInLeft" aria-labelledby="navbarDropdownMenuLink">
+                                     <li><a class="dropdown-item" href="nav/eventos.html">Eventos</a></li>
+                                     <li><a class="dropdown-item" href="nav/artistas.html">Artistas</a></li>
+                                     <li><a class="dropdown-item" href="nav/contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-               </ul>
-            </Nav>
-        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <section>
-            <article class="article animate__animated animate__backInDown">
-                <div class="info-one">                       
-                    <h2>Dedicada al Arte local.</h2>
-                      <p>Esta página nace de la necesidad de abordar un espacio donde esten artistas locales como regionales, difundir su material y saber de futuros eventos en la zona.</p>     
-                <div class="mapa">             
-                    <h3 class="crespo"> Crespo - Entre Ríos</h3>
-                       <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mEErYvbqFGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>              
-                        <a class="flecha1" href="#span"><i class="fa-solid fa-angles-down"></i></a>                        
-                </div>       
-                <div class="info-two">   
-                       <h2 >Sobre Crespo.</h2>
-                       <p>Crespo es un municipio del departamento Paraná en la provincia de Entre Ríos, República Argentina. El municipio comprende la localidad del mismo nombre y un área rural. Se ubica a 42 km al sudeste de la ciudad de Paraná.
-                       El origen de la ciudad se vincula con la construcción de la estación del Ferrocarril de primera categoría, que fue el puerto férreo más importante de la zona y permitió la instalación de inmigrantes con proyectos visionarios. Su nombre se relaciona con el del propietario de las tierras donde se registraron los primeros asentamientos que dieron origen a la ciudad: el gobernador Manuel Crespo.   
-                       </p>
-                </div>           
+            <article class="article__one" >
+            <div class="container">
+                <div class="row">
+                    <div class="article__one--info-one animate__animated animate__fadeIn">                       
+                         <h2>Dedicada al Arte local.</h2>
+                         <p>Esta página nace de la necesidad de abordar un espacio donde esten artistas locales como regionales, difundir su material y saber de futuros eventos en la zona.</p>                 
+                         <h3 class="crespo"> Crespo - Entre Ríos</h3>
+                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mEErYvbqFGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>               
+                    </div>                                     
+                         <a class="article__one--flecha mb-5" href="#abajo"><i class="fa-solid fa-angles-down"></i></a>                                                
+                    <div class="article__one--info-two mt-5 mb-5 animate__animated animate__fadeIn">   
+                         <h2 >Sobre Crespo.</h2>
+                         <p>Crespo es un municipio del departamento Paraná en la provincia de Entre Ríos, República Argentina. El municipio comprende la localidad del mismo nombre y un área rural. Se ubica a 42 km al sudeste de la ciudad de Paraná.
+                         El origen de la ciudad se vincula con la construcción de la estación del Ferrocarril de primera categoría, que fue el puerto férreo más importante de la zona y permitió la instalación de inmigrantes con proyectos visionarios. Su nombre se relaciona con el del propietario de las tierras donde se registraron los primeros asentamientos que dieron origen a la ciudad: el gobernador Manuel Crespo.   
+                         </p>
+                    </div> 
+                </div>  
+            </div>        
             </article>
-        </section> 
-        <div class="article2">
-        <section>
-            <article>              
+            <article class="article__two">   
+                <div class="container">
+                    <div class="row">
+                        <h4>Noticias/Eventos:</h4>
+                        <div class="card-group">
+                            <div class="card noticias">
+                                <img src="imgens/eventos1.jpg" class="card-img-top" alt="Evento Libre Expresion">
+                                <div class="card-body">
+                                     <h5 class="card-title">Libre Expresion.</h5>
+                                     <p class="card-text">Evento libre expresion 8, 9, 10 de septiembre en salon El Castillo. Entrada 100$</p>
+                                     <p class="card-text"><small class="text-muted">Actualizado hace 1 semana.</small></p>
+                                </div>
+                            </div>
+                            <div class="card noticias">
+                                <img src="imgens/eventos2.jpg" class="card-img-top" alt="Fiesta de la cerveza">
+                                <div class="card-body">
+                                     <h5 class="card-title">Fiesta Nacional de la Cerveza</h5>
+                                     <p class="card-text">Fiesta de la Cerveza de union de Crespo.</p>
+                                     <p class="card-text"><small class="text-muted">Actualizado hace 2 semanas.</small></p>
+                                </div>
+                            </div>
+                            <div class="card noticias">
+                                <img src="imgens/evento4.png" class="card-img-top" alt="Festival El Lago">
+                                <div class="card-body">
+                                     <h5 class="card-title">Festival del Lago.</h5>
+                                     <p class="card-text">Festival del lago proximo 9 de diciembre.</p>
+                                     <p class="card-text"><small class="text-muted">Actualizado hace 3 semanas.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </article>
-        </section> 
-        </div>
-        <aside class="aside">              
-                <ul>  
-                    <li> <h3>NotiCresp@rte</h3>  
-                        <ul class="aside__noticia">                      
-                            <li>                          
-                               <h4>Crespo esta dando oportunidad a los Artistas</h4>
-                               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores non libero modi, excepturi exercitationem hic ad. Quasi corrupti optio, mollitia omnis eaque, quis eveniet, ab earum dolorum sit sint.</p>
-                               <img src="imgens/Lago rock.png">                           
-                            </li>                         
-                       </ul> 
-                   </li>    
-                </ul>      
-        </aside>         
-        <footer class="footer">          
-            <div class="maps">  
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>         
-            <div class="redes" id="span">
-                 <a class="Seguinos__A" href="https://facebook.com/nabu.lell" target="_BLANK"><i class="fa-brands fa-facebook"></i></a>
-                 <a class="Seguinos__A" href="https://www.instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="derechos">
-                  <h3>Todos los derechos son reservados.</h3> 
-            </div>
+        </section>                 
+        <footer class="footer__one" id="abajo">
+            <div class="container-fluid">
+               <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4"> 
+                        <p>Redes:</p>  
+                         <div class="redessociales"> 
+                         <p class="icon"><a  href="#"><i class="fa-brands fa-facebook"></i></a></p>  
+                         <p class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>     
+                         <p class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>   
+                        </div>               
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <p class="h1">Powered by: </p> 
+                         <p><img src="imgens/NAHUBLANCO.png"><p>                
+                    </div>
+               </div>
+            </div>  
         </footer>
-    </div>
+        <footer class="footer__two">
+            <div class="container-fluid">
+                <div class="row">
+                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                         <p>Todos los derechos son reservados.<p>              
+                     </div>
+                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                         <p>2022 Copyright © - NHU</p>       
+                     </div>
+                </div>
+            </div>
+        </footer>     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

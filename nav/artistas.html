@@ -1,80 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../style.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="icon" href="../imgens/icono.ico">
-        <title>Cresp@rte</title>
-    </head>
-    <body>
-    <div id="grillatwo">
-        <header class="header">
-            <div class="menuse">                
-                <Nav class="nav"> 
-                    <a href="../index.html"><img src="../imgens/logo.png"></a>
-                    <ul class="animate__animated animate__backInDown">
-                        <li> <a href="eventos.html" > Eventos</a></li>
-                        <li> <a href="artistas.html" > Artistas</a></li>
-                        <li> <a href="contacto.html" >Contacto</a></li>
-                                        
-                   </ul>
-                </Nav>
+  <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../style.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
+     <link rel="icon" href="../imgens/icono.ico">
+     <title>Cresp@rte</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body id="body">
+    <header class="header" id="flecha">           
+      <nav class="navbar navbar-expand-lg header__nav">
+        <div class="container-fluid">
+           <a class="navbar-brand logo" href="../index.html"><img src="../imgens/logo.png" alt="Logo Cresp@rte"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav animate__animated animate__fadeInDown">
+              <li class="nav-item">
+                <a class="nav-link home" href="../index.html"><img src="../imgens/home.png">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">Eventos</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link text-white" href="artistas.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>                                                           
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>        
+    <section>
+      <article class="article__pag">             
+        <div class="container article__pag--artistas animate__animated animate__slideInLeft">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card carta" style="width: 18rem;">
+                <img src="../imgens/nahuellell.jpg" class="card-img-top" alt="Nahuel Lell">
+                <div class="card-body">
+                  <h5 class="card-title">Nahuel Lell</h5>
+                  <p class="card-text">Nahuel Lell de la ciudad de Crespo, a participado en bandas como Juglares, Los recorcholis y hoy se desempeña como artista solista con el apodo de NHU</p>
+                </div>
+                <div class="card-body redessociales">
+                  <p class="icon"><a href="https://www.youtube.com/channel/UC1_52Ko0TOzgoWPhaU1QCpA" target="_blank" class="card-link icon"><i class="fa-brands fa-youtube"></i></a></p>                      
+                  <p class="icon"><a href="https://facebook.com" target="_blank" class="card-link icon"><i class="fa-brands fa-facebook"></i></a></p>
+                </div>
+              </div>
             </div>
-        </header>
-        
-        <section>
-            <article class="article__pag">     
-                <h2>Artistas</h2>        
-              <div class="artistas">     
-                <div class="artistas__crespo animate__animated animate__fadeInUp">
-                     <h3>Nahuel Lell</h3>
-                     <img src="../imgens/nahuellell.jpg" alt="Nahuel Lell" title="Nahuel Lell">
-                     <p>Nahuel Lell de la ciudad de Crespo, a participado en bandas como Juglares, Los recorcholis y hoy se desempeña como artista solista con el apodo de NHU</p>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card carta" style="width: 18rem;">
+                <img src="../imgens/ema.jpg" class="card-img-top" alt="Emanuel Vera">
+                <div class="card-body">
+                  <h5 class="card-title">Emanuel Vera</h5>
+                  <p class="card-text">Emanuel Vera nacido en la ciudad de Crespo, musico conocido en el ambiente del rock local. a tocado en bandas como en Tarseros, Cuerpodelia, Proyecto Gato, etc.</p>
                 </div>
-                <div class="artistas__crespo animate__animated animate__fadeInDown">
-                    <h3>Cuerpodelia</h3>
-                    <img src="../imgens/cuerpodelia.jpg" alt="Cuerpodelia" title="Cuerpodelia">
-                    <p> Cuerpodelia banda de  la ciudad de Crespo, integrada por Emanuel Vera, Nico Cuantico y el ruso unrein.
-                    </p>
-               </div>
-                <div class="artistas__crespo animate__animated animate__fadeInUp">
-                     <h3>Emanuel Vera</h3>
-                     <img src="../imgens/ema.jpg" alt="Emanuel Vera" title="Emanuel Vera">
-                     <p> Emanuel Vera nacido en la ciudad de Crespo, musico conocido en el ambiente del rock local. a tocado en bandas como en Tarseros, Cuerpodelia, Proyecto Gato, etc.
-                     </p>
+                <div class="card-body redessociales">
+                  <p class="icon"><a href="https://www.youtube.com/channel/UC1_52Ko0TOzgoWPhaU1QCpA" target="_blank" class="card-link icon"><i class="fa-brands fa-youtube"></i></a></p>                      
+                  <p class="icon"><a href="https://facebook.com" target="_blank" class="card-link icon"><i class="fa-brands fa-facebook"></i></a></p>
                 </div>
-                <div class="artistas__crespo animate__animated animate__fadeInDown">
-                    <h3>Michael Lell</h3>
-                    <img src="../imgens/michaellell.jpg" alt="Michael Lell" title="Michael Lell">
-                    <p> Michael Nacido el 24 de abril del 2002, ganador de premios importantes en la zona como el premio al super premio.
-                    </p>
-               </div>
-               <div class="artistas__crespo animate__animated animate__fadeInUp">
-                    <h3>Anabella Jacob</h3>
-                    <img src="../imgens/anabellajacob.jpg" alt="Anabella Jacob" title="Anabella Jacob">
-                    <p> Anabella Jacob una joven artista de la ciudad de Crespo, desde muy chica le gustaba pintar con acuarelas y hoy deslumbra la ciudad con su arte.
-                    </p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card carta" style="width: 18rem;">
+                <img src="../imgens/michaellell.jpg" class="card-img-top" alt="Michael Lell">
+                <div class="card-body">
+                  <h5 class="card-title">Michael Lell</h5>
+                  <p class="card-text">Michael Nacido el 24 de abril del 2002, ganador de premios importantes en la zona como el premio al super premio..</p>
                 </div>
-             </div>
-
-            </article>
-        </section>
-        <footer class="footer">          
-            <div class="maps">  
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>         
-            <div class="redes" id="span">
-                <a class="Seguinos__A" href="https://facebook.com/nabu.lell" target="_BLANK"><i class="fa-brands fa-facebook"></i></a>
-                <a class="Seguinos__A" href="https://www.instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
-           </div>
-           <div class="derechos">
-                 <h3>Todos los derechos son reservados.</h3> 
-           </div>
-        </footer>
-    </div>   
-    </body>
+                <div class="card-body redessociales">
+                  <p class="icon"><a href="https://www.youtube.com/channel/UC1_52Ko0TOzgoWPhaU1QCpA" target="_blank" class="card-link icon"><i class="fa-brands fa-youtube"></i></a></p>                      
+                  <p class="icon"><a href="https://facebook.com" target="_blank" class="card-link icon"><i class="fa-brands fa-facebook"></i></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card carta" style="width: 18rem;">
+                <img src="../imgens/anabellajacob.jpg" class="card-img-top" alt="Anabella Jacob">
+                <div class="card-body">
+                    <h5 class="card-title">Anabella Jacob</h5>
+                    <p class="card-text">Anabella Jacob una joven artista de la ciudad de Crespo, desde muy chica le gustaba pintar con acuarelas y hoy deslumbra la ciudad con su arte.</p>
+                </div>
+                <div class="card-body redessociales">
+                    <p class="icon"><a href="https://www.youtube.com/channel/UC1_52Ko0TOzgoWPhaU1QCpA" target="_blank" class="card-link icon"><i class="fa-brands fa-youtube"></i></a></p>                      
+                    <p class="icon"><a href="https://facebook.com" target="_blank" class="card-link icon"><i class="fa-brands fa-facebook"></i></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card carta" style="width: 18rem;">
+                <img src="../imgens/cuerpodelia.jpg" class="card-img-top" alt="Cuerpodelia">
+                <div class="card-body">
+                    <h5 class="card-title">Cuerpodelia</h5>
+                    <p class="card-text">Cuerpodelia banda de  la ciudad de Crespo, integrada por Emanuel Vera, Nico Cuantico y el ruso unrein.</p>
+                </div>
+                <div class="card-body redessociales">
+                    <p class="icon"><a href="https://www.youtube.com/channel/UC1_52Ko0TOzgoWPhaU1QCpA" target="_blank" class="card-link icon"><i class="fa-brands fa-youtube"></i></a></p>                      
+                    <p class="icon"><a href="https://facebook.com" target="_blank" class="card-link icon"><i class="fa-brands fa-facebook"></i></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>         
+      </article>
+    </section>
+    <footer class="footer__one" id="abajo">
+       <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4"> 
+                 <p>Redes</p>  
+              <div class="redessociales">                         
+                 <p class="icon"><a  href="#"><i class="fa-brands fa-facebook"></i></a></p>  
+                 <p class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>     
+                 <p class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>   
+              </div>               
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+               <p class="h1">Powered by: </p> 
+               <p><img src="../imgens/NAHUBLANCO.png"><p>                
+            </div>
+         </div>
+      </div>  
+    </footer>
+    <footer class="footer__two">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+            <p>Todos los derechos son reservados.<p>              
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+            <p>2022 Copyright © - NHU</p>       
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+  </body>
 </html>

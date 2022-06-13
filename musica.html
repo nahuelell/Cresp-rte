@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="icon" href="imgens/icono.ico">
         <title>Cresp@rte</title>
-    </head>
-    <body>
-    <div id="grillatwo">
-        <header class="header">
-            <div>           
-                <Nav class="nav"> 
-                    <a href="index.html"><img src="imgens/logo.png"></a>
-                     <ul class="animate__animated animate__backInDown">    
-                         <li><a href="musica.html">Música</a></li>         
-                         <li><a href="arteplastico.html">Arte Plastico</a></li>              
-                     </ul>
-                </Nav>
-            </div>             
-        </header>
-        <section>
-            <article class="article__pag animate__animated animate__slideInDown">
-                    <h2>Música</h2> 
-                    <div class="musica__grilla">                                     
-                        <div class="cuate">
-                             <h3>Emanuel Vera</h3>
-                            <iframe width="450" height="315" src="https://www.youtube.com/embed/UOLBH0pUryM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div> 
-                        <div class="cuerpodelia">
-                            <h3>Cuerpodelia</h3>
-                            <iframe width="450" height="315" src="https://www.youtube.com/embed/_25La9QdoPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>    
-                        <div class="nahuel">
-                            <h3>Nahuel Lell</h3>
-                            <iframe width="450" height="720" src="https://www.youtube.com/embed/3_O2cah4C4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>                     
-                        </div>                                 
-                    </div>      
-            </article>
-        </section>
-        <footer class="footer">          
-            <div class="maps">  
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>         
-            <div class="redes" id="span">
-                <a class="Seguinos__A" href="https://facebook.com/nabu.lell" target="_BLANK"><i class="fa-brands fa-facebook"></i></a>
-                <a class="Seguinos__A" href="https://www.instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
-           </div>
-           <div class="derechos">
-                 <h3>Todos los derechos son reservados.</h3> 
-           </div>
-        </footer>
-    </div>    
-    </body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body id="body">  
+    <header class="header" id="flecha">           
+      <nav class="navbar navbar-expand-lg header__nav">
+        <div class="container-fluid">
+           <a class="navbar-brand logo" href="index.html"><img src="imgens/logo.png" alt="Logo Cresp@rte"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav animate__animated animate__fadeInDown">
+               <li class="nav-item">
+                 <a class="nav-link home" href="index.html"><img src="imgens/home.png">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link text-white" href="musica.html">Música</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="arteplastico.html">Arte Plastico</a>
+               </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <section>
+        <article class="article__pag"> 
+          <div class="container article__pag--music animate__animated animate__zoomIn">
+            <div class="row">
+              <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <iframe controls src="https://www.youtube.com/embed/UOLBH0pUryM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100" alt="..."></iframe>
+                  </div>
+                  <div class="carousel-item">
+                     <iframe controls src="https://www.youtube.com/embed/_25La9QdoPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreenclass="d-block w-100" alt="..."></iframe> 
+                  </div>
+                  <div class="carousel-item">
+                     <iframe controls src="https://www.youtube.com/embed/3_O2cah4C4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100" alt="..."></iframe>
+                  </div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+            </div>
+          </div>              
+        </article>       
+      </section>
+    <footer class="footer__one" id="abajo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+            <p>Redes:</p>   
+            <div class="redessociales"> 
+              <p class="icon"><a  href="#"><i class="fa-brands fa-facebook"></i></a></p>  
+              <p class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>     
+              <p class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>   
+            </div>               
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+             <p class="h1">Powered by: </p> 
+             <p><img src="imgens/NAHUBLANCO.png"><p>                
+          </div>
+        </div>
+      </div>  
+    </footer>
+    <footer class="footer__two">
+        <div class="container-fluid">
+            <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                       <p>Todos los derechos son reservados.<p>              
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                      <p>2022 Copyright © - NHU</p>       
+                  </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+  </body>
 </html>

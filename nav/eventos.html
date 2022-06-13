@@ -1,77 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../style.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="icon" href="../imgens/icono.ico">
-        <title>Cresp@rte</title>
-    </head>
-    <body>
-    <div id="grillatwo">
-        <header class="header">
-            <div class="menuse">              
-               <Nav class="nav"> 
-                     <a href="../index.html"><img src="../imgens/logo.png"></a>
-                    <ul class="animate__animated animate__backInDown">
-                        <li> <a href="eventos.html" > Eventos</a></li>
-                        <li> <a href="artistas.html" > Artistas</a></li>
-                        <li> <a href="contacto.html" >Contacto</a></li>                                                   
-                   </ul>
-                </Nav>
-            </div>
-        </header>
-        <section>
-            <article class="article__pag">
-                <div class="eventos">  
-                    <h2>Eventos Proximos</h2>           
-                  <div class="lago animate__animated animate__fadeInUp">
-                     <h3> Lago Rock 22/5</h3>
-                         <img src="https://www.crespo.gob.ar/wp-content/uploads/2022/02/2022-DOMINGOS-EN-EL-LAGO-Rock-portada-web-1024x576.png" alt="Lago Rock" title="Lago Rock" width="300">
-                         <p>Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo.</p>
-                  </div>
-                  <div class="lago2 animate__animated animate__fadeInDown">
-                    <h3> Lago Rock 22/5</h3>
-                        <img src="https://www.crespo.gob.ar/wp-content/uploads/2022/02/2022-DOMINGOS-EN-EL-LAGO-Rock-portada-web-1024x576.png" alt="Lago Rock" title="Lago Rock" width="300">
-                        <p>Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo.</p>
-                 </div>
-                  <div class="imefa animate__animated animate__fadeInUp">
-                     <h3> Imefa </h3>
-                         <img src="https://www.crespo.gob.ar/wp-content/uploads/2022/02/2022-DOMINGOS-EN-EL-LAGO-Rock-portada-web-1024x576.png" alt="Lago Rock" title="Lago Rock" width="300">
-                         <p>Proximo 4/6 se presentara la muestra anual de arte en Imefa apartir de las 18:00 en el salon municipal de la ciudad de Crespo.</p>
-                  </div>
+  <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../style.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/cbed078a39.js" crossorigin="anonymous"></script>
+     <link rel="icon" href="../imgens/icono.ico">
+     <title>Cresp@rte</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body id="body">  
+    <header class="header" id="flecha">           
+      <nav class="navbar navbar-expand-lg header__nav">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="../index.html"><img src="../imgens/logo.png" alt="Logo Cresp@rte"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav animate__animated animate__fadeInDown">
+              <li class="nav-item">
+                 <a class="nav-link home" href="../index.html"><img src="../imgens/home.png">Home</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link text-white" href="eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="artistas.html">Artistas</a>
+              </li>  
+              <li class="nav-item">
+                 <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>                                      
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <article class="article__pag">
+        <div class="container article__pag--eventos animate__animated animate__slideInLeft">
+          <div class="row"> 
+            <h2>Proximos Eventos:</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/eventos1.jpg" class="card-img-top" alt="Evento Libre Expresion">
+                <div class="card-body todo">
+                  <h1>Evento Libre expresion</h1>
+                  <p class="card-text">Evento libre expresion 8, 9, 10 de septiembre en salon El Castillo. Entrada 100$ </p>
                 </div>
-                 
-            </article>
-        </section>
-        <aside class="aside">              
-            <ul>  
-                <li> <h3>NotiCresp@rte  </h3>  
-                    <ul class="aside__noticia">                      
-                        <li>                          
-                           <h4>Crespo esta dando oportunidad a los Artistas</h4>
-                           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores non libero modi, excepturi exercitationem hic ad. Quasi corrupti optio, mollitia omnis eaque, quis eveniet, ab earum dolorum sit sint.</p>
-                           <img src="../imgens/Lago rock.png">                           
-                        </li>                         
-                   </ul> 
-               </li>    
-            </ul>      
-    </aside>    
-        <footer class="footer">          
-            <div class="maps">  
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>         
-            <div class="redes" id="span">
-                <a class="Seguinos__A" href="https://facebook.com/nabu.lell" target="_BLANK"><i class="fa-brands fa-facebook"></i></a>
-                <a class="Seguinos__A" href="https://www.instagram.com/" target="_BLANK"><i class="fa-brands fa-instagram"></i></a>
-           </div>
-           <div class="derechos">
-                 <h3>Todos los derechos son reservados.</h3> 
-           </div>
-        </footer>
-    </div>
-    </body>
+              </div>                            
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/eventos2.jpg" class="card-img-top" alt="Fiesta Nacional de la Cerveza">
+                <div class="card-body todo">
+                  <h1> Fiesta de la Cerveza</h1>
+                  <p class="card-text">Fiesta de la Cerveza de union de Crespo.</p>
+                </div>
+              </div>                            
+            </div>   
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/evento4.png" class="card-img-top" alt="Festival Lago">
+                <div class="card-body todo">
+                  <h1> Festival Lago.</h1>
+                  <p class="card-text">Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo. </p>
+               </div>
+              </div>                            
+            </div>   
+            <h2>Eventos Pasados:</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/eventos3.jfif" class="card-img-top" alt="Lago Rock">
+                <div class="card-body todo">
+                  <h1> Lago Rock</h1>
+                  <p class="card-text">Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo. </p>
+                </div>
+              </div>                            
+            </div>   
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/Lago rock.png" class="card-img-top" alt="Lago Rock">
+                <div class="card-body todo">
+                  <h1> Lago Rock</h1>
+                  <p class="card-text">Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo. </p>
+                </div>
+              </div>                            
+            </div>   
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 container">
+              <div class="card" style="width: 18rem;">
+                <img src="../imgens/Lago rock.png" class="card-img-top" alt="Lago Rock">
+                <div class="card-body todo">
+                  <h1> Lago Rock</h1>
+                  <p class="card-text">Proximo 22/5 en el parque del Lago de la ciudad de Crespo apartir de las 16:00 estaran presentandose  La zapada de aurelio y Astillas del mismo palo. </p>
+                </div>
+              </div>                            
+             </div>                                 
+          </div>
+        </div>           
+      </article>
+    </section>          
+    <footer class="footer__one" id="abajo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+            <p>Redes</p>   
+            <div class="redessociales">                         
+              <p class="icon"><a  href="#"><i class="fa-brands fa-facebook"></i></a></p>  
+              <p class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>     
+              <p class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>   
+            </div>               
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <p class="h1">Powered by: </p> 
+            <p><img src="../imgens/NAHUBLANCO.png"><p>                
+          </div>
+        </div>
+      </div>  
+    </footer>
+    <footer class="footer__two">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+            <p>Todos los derechos son reservados.<p>              
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+            <p>2022 Copyright © - NHU</p>       
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
