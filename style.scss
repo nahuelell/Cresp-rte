@@ -2,62 +2,34 @@
 #body {
     background-color: #e0d4c0 ;    
 }
-
-.banner {
-    width: 100%;
-    padding: 15rem 2rem;
-    background: url(imgens/crespo.jpg);
-    background-color: rgba (0,0,0,0.3);
-    background-blend-mode: soft-light;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    .banner__flecha {
-         color: #000000;
-         text-decoration: none;
-         font-size: 50px;   
-         display: flex;
-         justify-content: space-around;
-         margin-top: 200px;
-         margin-bottom: -200px;
-         &:hover,
-         &:focus {
-             color:$colornav;
-         }
-    }
-    img { display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 400px;
-        margin: -200px 0 -200px;}
-}
 /* Menu */
 .header {
     background:$colornav;
      width: 100%;
-     position: sticky;
-     top: 0;
      z-index: 20; 
+    .shadow{
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
      .logo {
         display:none;
     }
-     ul {
+    ul {
         display: flex; 
         flex-grow: 1;
         justify-content: space-evenly; 
         flex-wrap: wrap; 
         align-content: center;
-     }
-     ul li a { 
-        text-align: center;
-        position: relative;
-        color: #000000;
-     }
-     ul li ul {
-         position: relative;
-    }
-    ul ul {  
-         display: none;    
+        li { 
+            a { 
+                 text-align: center;
+                 position: relative;
+                 color: #000000;
+            }
+            ul {
+                position: relative;          
+                display: none;  
+            }
+        } 
     }
     .header__nav {
         font-size: 20px; 
@@ -85,22 +57,53 @@
             }
             .dropdown-menu {
                 background-color:$colornav;
-             }
-            .dropdown-menu .dropdown-item {
-                color:#000000;         
-            }
-            .dropdown-menu .dropdown-item:hover,
-            .dropdown-menu .dropdown-item:focus,
-            .dropdown-menu .dropdown-item.active {
-                 color:  #000000 ;
-                 background-color:  #ffffff;
-            }
+                .dropdown-item {
+                    color:#000000; 
+                    &:hover,
+                    &:focus,
+                    &.active {
+                         color:  #000000 ;
+                         background-color:  #ffffff;
+                    }       
+                }
+            }        
         }
+    }
+}
+.banner {
+    width: 100%;
+    padding: 20rem 2rem;
+    background: url(imgens/crespo.jpg);
+    background-color: rgba (0,0,0,0.3);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    .banner__flecha {
+         color: #000000;
+         text-decoration: none;
+         font-size: 50px;   
+         display: flex;
+         justify-content: space-around;
+         align-items: flex-end;
+         margin-top: 250px;
+         margin-bottom: -250px;
+         &:hover,
+         &:focus {
+             color:$colornav;
+         }
+    }
+    img {
+         display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 400px;
+        margin: -200px 0 -200px;
     }
 }
 /* Article */
 .article__one {  
-    padding-top: 60px;
+    padding-top: 100px;
     text-align: center;
     .article__one--info-one,
     .article__one--info-two {
@@ -148,6 +151,7 @@
     text-align: center;
     vertical-align: middle;
     background:$colorfooter;
+    z-index: 10;
     img { 
         margin-top: 15px;
         vertical-align: middle;
@@ -161,6 +165,7 @@
     width: 100%;   
     text-align: center;
     background:$colornav;
+    z-index: 10;
     p {
         color: #000000;
     }
@@ -195,6 +200,9 @@
 
 /*article__pag*/
 .article__pag {
+     h2 {
+        text-align: center;
+     }
      .article__pag--music {
          margin-top: 20px;
          margin-bottom: 20px;
@@ -298,9 +306,13 @@
     background:$colornav;
 }
 @media screen and (max-width: 800px) {   
-    .banner img,.banner .banner__flecha,.article__one .article__flecha {  
-         display: none;      
-  }
+    .banner img {
+         display: flex;
+         flex-wrap: wrap;
+         width: 150px;
+         height: 150px;
+         margin: -100px -20px -200px;
+    }
     .header .home img {
          display: none;
   }

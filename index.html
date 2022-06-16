@@ -15,15 +15,10 @@
              new WOW().init();
          </script>
     </head>
-    <body id="body">
-         <div class="banner">          
-            <a href="index.html"><img src="imgens/logo.png" class="article animate__animated animate__backInDown"></a>
-            <a class="banner__flecha" href="#flecha"><i class="fa-solid fa-angles-down"></i></a>           
-         </div>     
-        <header class="header" id="flecha">           
-            <nav class="navbar navbar-expand-lg header__nav">
+    <body id="body">  
+        <header class="header">           
+            <nav id="menu"class="navbar navbar-expand-lg  shadow fixed-top">
                 <div class="container-fluid">
-                         <a class="navbar-brand" href="index.html"><img src="imgens/logo.png" alt="Logo Cresp@rte"></a>
                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                          <span class="navbar-toggler-icon"></span>
                          </button>
@@ -48,18 +43,22 @@
                 </div>
             </nav>
         </header>
+        <div class="banner">          
+            <a href="index.html"><img src="imgens/logo.png" class="article animate__animated animate__rotateIn"></a>
+            <a class="banner__flecha" href="#articles"><i class="fa-solid fa-angles-down"></i></a>           
+         </div>   
         <section>
-            <article class="article__one" >
+            <article class="article__one" id="articles" >
             <div class="container">
                 <div class="row">
-                    <div class="article__one--info-one animate__animated animate__fadeIn">                       
+                    <div class="article__one--info-one wow animate__animated animate__slideInUp">                       
                          <h2>Dedicada al Arte local.</h2>
                          <p>Esta página nace de la necesidad de abordar un espacio donde esten artistas locales como regionales, difundir su material y saber de futuros eventos en la zona.</p>                 
                          <h3 class="crespo"> Crespo - Entre Ríos</h3>
                          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mEErYvbqFGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>               
                     </div>                                     
                          <a class="article__one--flecha mb-5" href="#abajo"><i class="fa-solid fa-angles-down"></i></a>                                                
-                    <div class="article__one--info-two mt-5 mb-5 animate__animated animate__fadeIn">   
+                    <div class="article__one--info-two mt-5 mb-5 wow animate__animated animate__slideInUp">   
                          <h2 >Sobre Crespo.</h2>
                          <p>Crespo es un municipio del departamento Paraná en la provincia de Entre Ríos, República Argentina. El municipio comprende la localidad del mismo nombre y un área rural. Se ubica a 42 km al sudeste de la ciudad de Paraná.
                          El origen de la ciudad se vincula con la construcción de la estación del Ferrocarril de primera categoría, que fue el puerto férreo más importante de la zona y permitió la instalación de inmigrantes con proyectos visionarios. Su nombre se relaciona con el del propietario de las tierras donde se registraron los primeros asentamientos que dieron origen a la ciudad: el gobernador Manuel Crespo.   
@@ -72,38 +71,38 @@
                 <div class="container">
                     <div class="row">
                         <h4>Noticias/Eventos:</h4>
-                        <div class="card-group">
+                        <div class="card-group wow animate__animated animate__slideInLeft">
                             <div class="card noticias">
-                                <img src="imgens/eventos1.jpg" class="card-img-top" alt="Evento Libre Expresion">
-                                <div class="card-body">
-                                     <h5 class="card-title">Libre Expresion.</h5>
-                                     <p class="card-text">Evento libre expresion 8, 9, 10 de septiembre en salon El Castillo. Entrada 100$</p>
-                                     <p class="card-text"><small class="text-muted">Actualizado hace 1 semana.</small></p>
-                                </div>
+                              <img src="imgens/eventos1.jpg" class="card-img-top" alt="Evento Libre Expresion">
+                              <div class="card-body">
+                                <h5 class="card-title">Libre Expresion.</h5>
+                                <p class="card-text">Evento libre expresion 8, 9, 10 de septiembre en salon El Castillo. Entrada 100$</p>
+                                <p class="card-text"><small class="text-muted">Actualizado hace 1 semana.</small></p>
+                              </div>
                             </div>
-                            <div class="card noticias">
-                                <img src="imgens/eventos2.jpg" class="card-img-top" alt="Fiesta de la cerveza">
-                                <div class="card-body">
-                                     <h5 class="card-title">Fiesta Nacional de la Cerveza</h5>
-                                     <p class="card-text">Fiesta de la Cerveza de union de Crespo.</p>
-                                     <p class="card-text"><small class="text-muted">Actualizado hace 2 semanas.</small></p>
-                                </div>
+                            <div class="card noticias wow animate__animated animate__slideInLeft">
+                              <img src="imgens/eventos2.jpg" class="card-img-top" alt="Fiesta de la cerveza">
+                              <div class="card-body">
+                                <h5 class="card-title">Fiesta Nacional de la Cerveza</h5>
+                                <p class="card-text">Fiesta de la Cerveza de union de Crespo.</p>
+                                <p class="card-text"><small class="text-muted">Actualizado hace 2 semanas.</small></p>
+                              </div>
                             </div>
-                            <div class="card noticias">
-                                <img src="imgens/evento4.png" class="card-img-top" alt="Festival El Lago">
-                                <div class="card-body">
-                                     <h5 class="card-title">Festival del Lago.</h5>
-                                     <p class="card-text">Festival del lago proximo 9 de diciembre.</p>
-                                     <p class="card-text"><small class="text-muted">Actualizado hace 3 semanas.</small></p>
-                                </div>
+                            <div class="card noticias wow animate__animated animate__slideInLeft">
+                              <img src="imgens/evento4.png" class="card-img-top" alt="Festival El Lago">
+                              <div class="card-body">
+                                <h5 class="card-title">Festival del Lago.</h5>
+                                <p class="card-text">Festival del lago proximo 9 de diciembre.</p>
+                                <p class="card-text"><small class="text-muted">Actualizado hace 3 semanas.</small></p>
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>  
             </article>
         </section>                 
-        <footer class="footer__one" id="abajo">
-            <div class="container-fluid">
+        <footer id="abajo">
+            <div class="container-fluid footer__one">
                <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3">
                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54123.14876006645!2d-60.33799250511811!3d-32.02332588861722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b42490ae877c29%3A0x322d7ee5cd4d040a!2sCrespo%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1651769613768!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -111,9 +110,9 @@
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4"> 
                         <p>Redes:</p>  
                          <div class="redessociales"> 
-                         <p class="icon"><a  href="https://www.facebook.com/Nabu.lell/" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>  
-                         <p class="icon"><a href="https://www.instagram.com/nahuellell/" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>     
-                         <p class="icon"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></p>   
+                         <p class="icon"><a  href="#"><i class="fa-brands fa-facebook"></i></a></p>  
+                         <p class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></p>     
+                         <p class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></p>   
                         </div>               
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -122,19 +121,29 @@
                     </div>
                </div>
             </div>  
+            <div class="footer__two">
+                <div class="container-fluid">
+                    <div class="row">
+                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                             <p>Todos los derechos son reservados.<p>              
+                        </div>
+                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
+                            <p>2022 Copyright © - NHU</p>       
+                         </div>
+                     </div>
+                 </div>
+            </div> 
         </footer>
-        <footer class="footer__two">
-            <div class="container-fluid">
-                <div class="row">
-                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
-                         <p>Todos los derechos son reservados.<p>              
-                     </div>
-                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white">
-                         <p>2022 Copyright © - NHU</p>       
-                     </div>
-                </div>
-            </div>
-        </footer>     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($("#menu").offset().top > 500) {
+                $("#menu").addClass("header");
+            } else {
+                $("#menu").removeClass("header");
+            }
+        });
+    </script>
     </body>
 </html>
