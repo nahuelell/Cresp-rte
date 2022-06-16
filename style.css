@@ -14,10 +14,6 @@
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.header .logo {
-  display: none;
-}
-
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,10 +48,6 @@
 .header .header__nav img {
   width: 70px;
   margin: -13px 0 -13px;
-}
-
-.header .header__nav .home {
-  margin: -5px -40px -5px;
 }
 
 .header .header__nav ul ul {
@@ -252,6 +244,8 @@
 
 /*article__pag*/
 .article__pag h2 {
+  color: #000000;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -309,11 +303,6 @@
   text-align: center;
 }
 
-.article__pag .article__pag--eventos h2 {
-  color: #000000;
-  font-weight: bold;
-}
-
 /*contacto */
 .flex-container {
   display: -webkit-box;
@@ -328,7 +317,7 @@
       justify-content: space-around;
   background: rgba(162, 181, 161, 0.4);
   border-radius: 40px;
-  margin: 50px 0 50px;
+  margin-bottom: 50px;
 }
 
 .contacto {

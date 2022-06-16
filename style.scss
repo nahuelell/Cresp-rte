@@ -10,9 +10,6 @@
     .shadow{
           box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
-     .logo {
-        display:none;
-    }
     ul {
         display: flex; 
         flex-grow: 1;
@@ -36,9 +33,6 @@
         img {
             width: 70px;
             margin: -13px 0 -13px;
-        }
-        .home {
-            margin: -5px -40px -5px;
         }
         ul ul {
              background-color: transparent ;
@@ -201,7 +195,9 @@
 /*article__pag*/
 .article__pag {
      h2 {
-        text-align: center;
+         color: #000000;
+         font-weight: bold;
+         text-align: center;
      }
      .article__pag--music {
          margin-top: 20px;
@@ -246,10 +242,6 @@
     }
 }
 
-.article__pag .article__pag--eventos h2 {
-    color: #000000;
-    font-weight: bold;
-}
 /*contacto */
 .flex-container {
     display: flex;
@@ -258,7 +250,7 @@
     justify-content: space-around;
     background:$colorarticle;
     border-radius: 40px ;
-    margin: 50px 0 50px;
+    margin-bottom: 50px ;
 } 
 .contacto {
     min-width:250px;
