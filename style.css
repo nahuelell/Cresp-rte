@@ -1,3 +1,28 @@
+.fondocarta, .article__pag .article__pag--eventos .container .fondo, .article__pag .article__pag--artistas .container .ucard {
+  background: rgba(162, 181, 161, 0.4);
+  text-align: center;
+}
+
+.avatar, .article__pag .article__pag--eventos .container .fondo img, .article__pag .article__pag--artistas .container .ucard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titulo, .article__two .container .noticias h5, .article__pag h2, .article__pag .article__pag--eventos .container .fondo h1, .article__pag .article__pag--artistas .container h5 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 8px;
+  opacity: 0.85;
+}
+
+.small, .article__two .container .noticias p, .article__pag .article__pag--eventos .container .fondo p, .article__pag .article__pag--artistas .container .ucard p {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
 #body {
   background-color: #e0d4c0;
 }
@@ -18,14 +43,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -99,9 +124,8 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 250px;
   margin-bottom: -250px;
 }
@@ -114,6 +138,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 400px;
@@ -129,6 +156,9 @@
 
 .article__one .article__one--info-one,
 .article__one .article__one--info-two {
+  border-radius: 10px;
+  -webkit-box-shadow: 20px 20px 40px #ffffff, -20px -20px 40px #ffffff;
+          box-shadow: 20px 20px 40px #ffffff, -20px -20px 40px #ffffff;
   color: #000000;
   background: rgba(162, 181, 161, 0.4);
   padding-bottom: 10px;
@@ -139,6 +169,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -154,6 +187,8 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .article__one .article__one--flecha :hover,
@@ -170,11 +205,10 @@
 }
 
 .article__two .container .noticias {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
   background: rgba(162, 181, 161, 0.4);
-}
-
-.article__two .container .noticias h5, .article__two .container .noticias p {
-  color: #000000;
 }
 
 /* Footer */
@@ -214,6 +248,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .redessociales .icon {
@@ -244,7 +280,6 @@
 
 /*article__pag*/
 .article__pag h2 {
-  color: #000000;
   font-weight: bold;
   text-align: center;
 }
@@ -278,13 +313,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .article__pag .article__pag--eventos .container .fondo {
-  background: rgba(162, 181, 161, 0.4);
-  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
 }
 
 .article__pag .article__pag--artistas .container {
@@ -294,27 +332,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.article__pag .article__pag--artistas .container .fondo {
-  background: rgba(162, 181, 161, 0.4);
-  text-align: center;
+.article__pag .article__pag--artistas .container .ucard {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+}
+
+.article__pag .article__pag--artistas .container .ucard img {
+  border-radius: 100px;
 }
 
 /*contacto */
 .flex-container {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background: rgba(162, 181, 161, 0.4);
   border-radius: 40px;
   margin-bottom: 50px;

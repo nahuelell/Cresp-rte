@@ -1,20 +1,28 @@
 @import "colores";
+@import "fondo";
+@mixin flexin($disp, $just, $wra) { 
+    display: $disp;
+    justify-content: $just;
+    flex-wrap: $wra;
+}
+@mixin bordersha ($radius , $eje) {
+    border-radius: $radius;
+    box-shadow: $eje $eje ($eje*2) #ffffff, (-$eje) (-$eje) ($eje*2) #ffffff ;
+}
 #body {
     background-color: #e0d4c0 ;    
 }
 /* Menu */
 .header {
-    background:$colornav;
+     background:map-get($colores , colornav);
      width: 100%;
      z-index: 20; 
     .shadow{
           box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
     ul {
-        display: flex; 
+        @include flexin(flex , space-evenly, wrap);
         flex-grow: 1;
-        justify-content: space-evenly; 
-        flex-wrap: wrap; 
         align-content: center;
         li { 
             a { 
@@ -50,7 +58,7 @@
                  border-color: #ffffff;
             }
             .dropdown-menu {
-                background-color:$colornav;
+                background-color:map-get($colores , colornav);
                 .dropdown-item {
                     color:#000000; 
                     &:hover,
@@ -76,20 +84,17 @@
     .banner__flecha {
          color: #000000;
          text-decoration: none;
-         font-size: 50px;   
-         display: flex;
-         justify-content: space-around;
-         align-items: flex-end;
+         font-size: 50px; 
+         @include flexin(flex, space-around, wrap);
          margin-top: 250px;
          margin-bottom: -250px;
          &:hover,
          &:focus {
-             color:$colornav;
+             color:map-get($colores , colornav);
          }
     }
-    img {
-         display: flex;
-        flex-wrap: wrap;
+    img {     
+        @include flexin(flex,center ,wrap );  
         width: 400px;
         height: 400px;
         margin: -200px 0 -200px;
@@ -101,26 +106,25 @@
     text-align: center;
     .article__one--info-one,
     .article__one--info-two {
+         @include bordersha(10px, 20px );
          color: #000000;
-         background:$colorarticle;
+         background:map-get($colores , colorarticle);
          padding-bottom: 10px;
          border-radius: 10px;
     }
     .article__one--info-one iframe {
-         display: flex;
-         flex-wrap: wrap;
+         @include flexin(flex, center ,wrap ); 
          width:100%;
          height: 300px;
     }
     .article__one--flecha{
          text-decoration: none;
          color: #000000;
-         font-size: 50px;   
-         display: flex;
-         justify-content: space-around; 
+         font-size: 50px; 
+         @include flexin(flex, space-around ,wrap ); 
          :hover,
          :focus {
-            color: $colorarticle;
+            color:map-get($colores , colorarticle);
          } 
     }
 }
@@ -130,13 +134,17 @@
          .h4 {
             color: #000000;
          }
-         .noticias{
-            background:$colorarticle;
-            h5,p { 
-                color:#000000;
-            }
-         }
-    }
+         .noticias{           
+             @include bordersha(10px, 5px );
+             background:map-get($colores , colorarticle);
+             h5 {
+                @extend .titulo;
+             }
+             p { 
+                @extend .small;
+             }
+        }
+    }  
 }
 
 /* Footer */
@@ -144,7 +152,7 @@
     width: 100%;   
     text-align: center;
     vertical-align: middle;
-    background:$colorfooter;
+    background:map-get($colores , colorfooter);
     z-index: 10;
     img { 
         margin-top: 15px;
@@ -158,25 +166,24 @@
 .footer__two {
     width: 100%;   
     text-align: center;
-    background:$colornav;
+    background:map-get($colores , colornav);
     z-index: 10;
     p {
         color: #000000;
     }
 }
 .redessociales {
-     display: flex;
-     justify-content: center; 
+     @include flexin(flex, center ,wrap ); 
     .icon{
          justify-items: auto;
          margin: 10px;
          border-radius: 5px;
          width: 60px;
          height:60px;
-         background:$colornav;
+         background:map-get($colores , colornav);
          &:hover,
          &:focus { 
-             color: $colornav;
+             color:map-get($colores , colornav);
              background: #ffffff;
         }
         a{ 
@@ -185,7 +192,7 @@
              color: #ffffff;
              :hover,
              :focus {
-                 color:$colornav;
+                 color:map-get($colores , colornav);
                  background: #ffffff;
             }
         }
@@ -195,7 +202,7 @@
 /*article__pag*/
 .article__pag {
      h2 {
-         color: #000000;
+         @extend .titulo;
          font-weight: bold;
          text-align: center;
      }
@@ -218,84 +225,101 @@
     }  
     .article__pag--eventos {
         .container {
-             display: flex;
-             justify-content: center;
+            
+             @include flexin(flex, center ,wrap ); 
              margin-top: 20px; 
-             margin-bottom: 20px;
-             .fondo {
-                 background: $colorarticle;
-                 text-align: center;
-             }     
+             margin-bottom: 20px; 
+             .fondo { 
+                @include bordersha(10px, 5px );
+                h1 {
+                    @extend .titulo;
+                }
+                @extend .fondocarta;
+                img {
+                    @extend .avatar;
+                }
+                p { 
+                    @extend .small;
+                }
+             }
         }
     } 
     .article__pag--artistas{
          .container {
-             display: flex;
-             justify-content: center;
+             @include flexin(flex, center ,wrap ); 
              margin-top: 20px; 
              margin-bottom: 20px;
-             .fondo {
-                background: $colorarticle;
-                text-align: center;
-            }    
+             h5 {
+                @extend .titulo;
+            }
+            .ucard {
+                @include bordersha(10px, 5px );
+                @extend .fondocarta;
+                img {
+                    @extend .avatar;
+                    border-radius: 100px;
+                }
+                p { 
+                    @extend .small;
+                }
+            }
         }  
     }
 }
 
 /*contacto */
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    background:$colorarticle;
-    border-radius: 40px ;
-    margin-bottom: 50px ;
+     @include bordersha(10px, 5px );
+     @include flexin(flex, space-around ,wrap ); 
+     align-items: center;
+     background:map-get($colores , colorarticle);
+     border-radius: 40px ;
+     margin-bottom: 50px ;
 } 
-.contacto {
-    min-width:250px;
-    flex: 1;
-    text-align: center;
-    padding: 30px;
+.contacto {     
+     min-width:250px;
+     flex: 1;
+     text-align: center;
+     padding: 30px;
 }
 .contacto textarea {
-    min-height: 140px;
-    resize: none;
+     min-height: 140px;
+     resize: none;
 }
 .contacto__input {
-    width: 100%;
-    padding: 6px;
-    margin: 6px 0;
-    border: none;
-    border-bottom: 3px solid #000000;
-    background: transparent ;
-    color:#ffffff;
+     width: 100%;
+     padding: 6px;
+     margin: 6px 0;
+     border: none;
+     border-bottom: 3px solid #000000;
+     background: transparent ;
+     color:#ffffff;
 }
 .contacto__input:focus {
-    background: linear-gradient(to bottom, transparent,$colorfooter );
-    outline: none;
-    border-bottom: 3px solid #000000;
+     background: linear-gradient(to bottom, transparent,map-get($colores , colorfooter));
+     outline: none;
+     border-bottom: 3px solid #000000;
 }
 
 .contacto-img img {   
-    width: 250px;
-    border-radius: 30%;
-    background:$colorfooter ;  
-    padding: 5px; 
+     width: 250px;
+     border-radius: 30%;
+     background:map-get($colores , colorfooter);
+     padding: 5px; 
 }
 .contacto input[type="submit"] {
-    background-color: #000000;
-    border-bottom: none;
-    padding: 12px;
-    border-radius: 10px;
+     background-color: #000000;
+     border-bottom: none;
+     padding: 12px;
+     border-radius: 10px;
 }
 .contacto input[type="submit"]:hover {
-    background-color: $colorfooter ;
-    border-bottom: none;
-    color: #000000;  
+     background-color:map-get($colores , colorfooter);
+     border-bottom: none;
+     color: #000000;  
 }
 .contacto input[type="submit"]:active {
-    background:$colornav;
+     background:map-get($colores , colornav);
 }
 @media screen and (max-width: 800px) {   
     .banner img {
