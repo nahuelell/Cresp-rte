@@ -1,23 +1,23 @@
-.fondocarta, .article__pag .article__pag--eventos .container .fondo, .article__pag .article__pag--artistas .container .ucard {
+.fondocarta, .article__pag .article__pag--eventos .container .ucard, .article__pag .article__pag--artistas .container .ucard {
   background: rgba(162, 181, 161, 0.4);
   text-align: center;
 }
 
-.avatar, .article__pag .article__pag--eventos .container .fondo img, .article__pag .article__pag--artistas .container .ucard img {
+.avatar, .article__pag .article__pag--eventos .container .ucard img, .article__pag .article__pag--artistas .container .ucard img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.titulo, .article__two .container .noticias h5, .article__pag h2, .article__pag .article__pag--eventos .container .fondo h1, .article__pag .article__pag--artistas .container h5 {
+.titulo, .article__two .container .noticias h5, .article__pag h1, .article__pag .article__pag--eventos .container .ucard h1, .article__pag .article__pag--artistas .container h5 {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 8px;
   opacity: 0.85;
 }
 
-.small, .article__two .container .noticias p, .article__pag .article__pag--eventos .container .fondo p, .article__pag .article__pag--artistas .container .ucard p {
+.small, .article__two .container .noticias p, .article__pag .article__pag--eventos .container .ucard p, .article__pag .article__pag--artistas .container .ucard p {
   font-weight: 400;
   font-size: 12px;
   opacity: 0.75;
@@ -154,11 +154,19 @@
   text-align: center;
 }
 
+.article__one h1 {
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-top: -50px;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: #ee9435;
+  border-radius: 10px;
+}
+
 .article__one .article__one--info-one,
 .article__one .article__one--info-two {
-  border-radius: 10px;
-  -webkit-box-shadow: 20px 20px 40px #ffffff, -20px -20px 40px #ffffff;
-          box-shadow: 20px 20px 40px #ffffff, -20px -20px 40px #ffffff;
   color: #000000;
   background: rgba(162, 181, 161, 0.4);
   padding-bottom: 10px;
@@ -205,9 +213,6 @@
 }
 
 .article__two .container .noticias {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
   background: rgba(162, 181, 161, 0.4);
 }
 
@@ -279,9 +284,11 @@
 }
 
 /*article__pag*/
-.article__pag h2 {
+.article__pag h1 {
   font-weight: bold;
   text-align: center;
+  font-size: 25px;
+  color: #000000;
 }
 
 .article__pag .article__pag--music {
@@ -319,10 +326,10 @@
   margin-bottom: 20px;
 }
 
-.article__pag .article__pag--eventos .container .fondo {
+.article__pag .article__pag--eventos .container .ucard {
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
+          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
 }
 
 .article__pag .article__pag--artistas .container {
@@ -340,8 +347,8 @@
 
 .article__pag .article__pag--artistas .container .ucard {
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
+          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
 }
 
 .article__pag .article__pag--artistas .container .ucard img {
@@ -351,8 +358,8 @@
 /*contacto */
 .flex-container {
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #ffffff, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
+          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +389,7 @@
   resize: none;
 }
 
-.contacto__input {
+.contacto .contacto__input {
   width: 100%;
   padding: 6px;
   margin: 6px 0;
@@ -392,14 +399,14 @@
   color: #ffffff;
 }
 
-.contacto__input:focus {
+.contacto .contacto__input:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#b68f70));
   background: linear-gradient(to bottom, transparent, #b68f70);
   outline: none;
   border-bottom: 3px solid #000000;
 }
 
-.contacto-img img {
+.contacto img {
   width: 250px;
   border-radius: 30%;
   background: #b68f70;

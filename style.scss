@@ -7,7 +7,7 @@
 }
 @mixin bordersha ($radius , $eje) {
     border-radius: $radius;
-    box-shadow: $eje $eje ($eje*2) #ffffff, (-$eje) (-$eje) ($eje*2) #ffffff ;
+    box-shadow: $eje $eje ($eje*2) #ee9435, (-$eje) (-$eje) ($eje*2) #ee9435 ;
 }
 #body {
     background-color: #e0d4c0 ;    
@@ -104,9 +104,18 @@
 .article__one {  
     padding-top: 100px;
     text-align: center;
+    h1 {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-top: -50px;
+        color:#ffffff;
+        font-size: 50px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background:map-get($colores , colornav);
+        border-radius: 10px;
+    }
     .article__one--info-one,
     .article__one--info-two {
-         @include bordersha(10px, 20px );
          color: #000000;
          background:map-get($colores , colorarticle);
          padding-bottom: 10px;
@@ -135,7 +144,6 @@
             color: #000000;
          }
          .noticias{           
-             @include bordersha(10px, 5px );
              background:map-get($colores , colorarticle);
              h5 {
                 @extend .titulo;
@@ -201,10 +209,12 @@
 
 /*article__pag*/
 .article__pag {
-     h2 {
+     h1 {
          @extend .titulo;
          font-weight: bold;
          text-align: center;
+         font-size: 25px;
+         color: #000000;
      }
      .article__pag--music {
          margin-top: 20px;
@@ -224,13 +234,12 @@
         }
     }  
     .article__pag--eventos {
-        .container {
-            
+        .container {        
              @include flexin(flex, center ,wrap ); 
              margin-top: 20px; 
-             margin-bottom: 20px; 
-             .fondo { 
-                @include bordersha(10px, 5px );
+             margin-bottom: 20px;
+             .ucard {   
+                @include bordersha(10px, 5px );           
                 h1 {
                     @extend .titulo;
                 }
@@ -281,45 +290,44 @@
      flex: 1;
      text-align: center;
      padding: 30px;
-}
-.contacto textarea {
-     min-height: 140px;
-     resize: none;
-}
-.contacto__input {
-     width: 100%;
-     padding: 6px;
-     margin: 6px 0;
-     border: none;
-     border-bottom: 3px solid #000000;
-     background: transparent ;
-     color:#ffffff;
-}
-.contacto__input:focus {
-     background: linear-gradient(to bottom, transparent,map-get($colores , colorfooter));
-     outline: none;
-     border-bottom: 3px solid #000000;
-}
-
-.contacto-img img {   
-     width: 250px;
-     border-radius: 30%;
-     background:map-get($colores , colorfooter);
-     padding: 5px; 
-}
-.contacto input[type="submit"] {
-     background-color: #000000;
-     border-bottom: none;
-     padding: 12px;
-     border-radius: 10px;
-}
-.contacto input[type="submit"]:hover {
-     background-color:map-get($colores , colorfooter);
-     border-bottom: none;
-     color: #000000;  
-}
-.contacto input[type="submit"]:active {
-     background:map-get($colores , colornav);
+     textarea {
+        min-height: 140px;
+        resize: none;
+    } 
+    .contacto__input {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #000000;
+    background: transparent ;
+    color:#ffffff;
+    &:focus {
+        background: linear-gradient(to bottom, transparent,map-get($colores , colorfooter));
+        outline: none;
+        border-bottom: 3px solid #000000;
+    }
+    }
+    img {   
+        width: 250px;
+        border-radius: 30%;
+        background:map-get($colores , colorfooter);
+        padding: 5px; 
+    }
+    input[type="submit"] {
+        background-color: #000000;
+        border-bottom: none;
+        padding: 12px;
+        border-radius: 10px;
+        &:hover {
+            background-color:map-get($colores , colorfooter);
+            border-bottom: none;
+            color: #000000;  
+        }
+        &:active {
+            background:map-get($colores , colornav);
+       }
+    }
 }
 @media screen and (max-width: 800px) {   
     .banner img {
