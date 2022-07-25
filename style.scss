@@ -102,17 +102,14 @@
 }
 /* Article */
 .article__one {  
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
     h1 {
         display: inline-block;
-        margin-bottom: 50px;
-        margin-top: -50px;
-        color:#ffffff;
+        margin-bottom: 0px;
+        color:#000000;
         font-size: 50px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background:map-get($colores , colornav);
-        border-radius: 10px;
     }
     .article__one--info-one,
     .article__one--info-two {
@@ -184,8 +181,8 @@
      @include flexin(flex, center ,wrap ); 
     .icon{
          justify-items: auto;
-         margin: 10px;
-         border-radius: 5px;
+         margin: 5px;
+         border-radius: 20px;
          width: 60px;
          height:60px;
          background:map-get($colores , colornav);
@@ -238,8 +235,7 @@
              @include flexin(flex, center ,wrap ); 
              margin-top: 20px; 
              margin-bottom: 20px;
-             .ucard {   
-                @include bordersha(10px, 5px );           
+             .ucard {             
                 h1 {
                     @extend .titulo;
                 }
@@ -262,7 +258,6 @@
                 @extend .titulo;
             }
             .ucard {
-                @include bordersha(10px, 5px );
                 @extend .fondocarta;
                 img {
                     @extend .avatar;
@@ -278,57 +273,56 @@
 
 /*contacto */
 .flex-container {
-     @include bordersha(10px, 5px );
      @include flexin(flex, space-around ,wrap ); 
      align-items: center;
      background:map-get($colores , colorarticle);
      border-radius: 40px ;
      margin-bottom: 50px ;
-} 
-.contacto {     
-     min-width:250px;
-     flex: 1;
-     text-align: center;
-     padding: 30px;
-     textarea {
-        min-height: 140px;
-        resize: none;
-    } 
-    .contacto__input {
-    width: 100%;
-    padding: 6px;
-    margin: 6px 0;
-    border: none;
-    border-bottom: 3px solid #000000;
-    background: transparent ;
-    color:#ffffff;
-    &:focus {
-        background: linear-gradient(to bottom, transparent,map-get($colores , colorfooter));
-        outline: none;
-        border-bottom: 3px solid #000000;
-    }
-    }
-    img {   
-        width: 250px;
+     img {  
+        padding: 5px;  
+        width: 350px;
         border-radius: 30%;
-        background:map-get($colores , colorfooter);
-        padding: 5px; 
     }
-    input[type="submit"] {
-        background-color: #000000;
-        border-bottom: none;
-        padding: 12px;
-        border-radius: 10px;
-        &:hover {
-            background-color:map-get($colores , colorfooter);
-            border-bottom: none;
-            color: #000000;  
-        }
-        &:active {
-            background:map-get($colores , colornav);
+    .contacto {     
+        min-width:250px;
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        textarea {
+           min-height: 140px;
+           resize: none;
+       } 
+       .contacto__input {
+       width: 100%;
+       padding: 6px;
+       margin: 6px 0;
+       border: none;
+       border-bottom: 3px solid #000000;
+       background: transparent ;
+       color:#000000;
+       &:focus {
+           background: linear-gradient(to bottom, transparent, map-get($colores , colornav));
+           outline: none;
+           border-bottom: 3px solid #000000;
        }
-    }
-}
+       }
+       input[type="submit"] {
+           background-color: #ffffff;
+           border-bottom: none;
+           padding: 12px;
+           border-radius: 10px;
+           &:hover {
+               background-color:map-get($colores , colornav);
+               border-bottom: none;
+               color: #000000;  
+           }
+           &:active {
+               background:map-get($colores , colornav);
+          }
+       }
+   }
+} 
+
 @media screen and (max-width: 800px) {   
     .banner img {
          display: flex;

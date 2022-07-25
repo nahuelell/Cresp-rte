@@ -150,19 +150,16 @@
 
 /* Article */
 .article__one {
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center;
 }
 
 .article__one h1 {
   display: inline-block;
-  margin-bottom: 50px;
-  margin-top: -50px;
-  color: #ffffff;
+  margin-bottom: 0px;
+  color: #000000;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background: #ee9435;
-  border-radius: 10px;
 }
 
 .article__one .article__one--info-one,
@@ -259,8 +256,8 @@
 
 .redessociales .icon {
   justify-items: auto;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 5px;
+  border-radius: 20px;
   width: 60px;
   height: 60px;
   background: #ee9435;
@@ -326,12 +323,6 @@
   margin-bottom: 20px;
 }
 
-.article__pag .article__pag--eventos .container .ucard {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
-          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
-}
-
 .article__pag .article__pag--artistas .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,21 +336,12 @@
   margin-bottom: 20px;
 }
 
-.article__pag .article__pag--artistas .container .ucard {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
-          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
-}
-
 .article__pag .article__pag--artistas .container .ucard img {
   border-radius: 100px;
 }
 
 /*contacto */
 .flex-container {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
-          box-shadow: 5px 5px 10px #ee9435, -5px -5px 10px #ee9435;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,58 +357,57 @@
   margin-bottom: 50px;
 }
 
-.contacto {
+.flex-container img {
+  padding: 5px;
+  width: 350px;
+  border-radius: 30%;
+}
+
+.flex-container .contacto {
   min-width: 250px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
-.contacto textarea {
+.flex-container .contacto textarea {
   min-height: 140px;
   resize: none;
 }
 
-.contacto .contacto__input {
+.flex-container .contacto .contacto__input {
   width: 100%;
   padding: 6px;
   margin: 6px 0;
   border: none;
   border-bottom: 3px solid #000000;
   background: transparent;
-  color: #ffffff;
+  color: #000000;
 }
 
-.contacto .contacto__input:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#b68f70));
-  background: linear-gradient(to bottom, transparent, #b68f70);
+.flex-container .contacto .contacto__input:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ee9435));
+  background: linear-gradient(to bottom, transparent, #ee9435);
   outline: none;
   border-bottom: 3px solid #000000;
 }
 
-.contacto img {
-  width: 250px;
-  border-radius: 30%;
-  background: #b68f70;
-  padding: 5px;
-}
-
-.contacto input[type="submit"] {
-  background-color: #000000;
+.flex-container .contacto input[type="submit"] {
+  background-color: #ffffff;
   border-bottom: none;
   padding: 12px;
   border-radius: 10px;
 }
 
-.contacto input[type="submit"]:hover {
-  background-color: #b68f70;
+.flex-container .contacto input[type="submit"]:hover {
+  background-color: #ee9435;
   border-bottom: none;
   color: #000000;
 }
 
-.contacto input[type="submit"]:active {
+.flex-container .contacto input[type="submit"]:active {
   background: #ee9435;
 }
 
